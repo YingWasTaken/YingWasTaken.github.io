@@ -1,0 +1,168 @@
+@import 'utilities.css';
+/* Variables del CSS */
+:root{
+    --primary:#ff0040;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --ternary:#898989;
+    --light:#F2F2F2;
+    --secondary:#070606;
+    --darkRed:#6F001C;
+    --clarito:pink;
+    --intenso:#ff456d;
+    --darktxt:#b3848e;
+    --dark-red:#D52350;
+    --subrayado: #FF3B7F;
+}
+
+/* Modificaciones generales */
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    -webkit-font-smothing:anatialised;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+section{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    margin-bottom: 6rem;
+    margin-top: 6rem;
+    padding: 0rem;
+}
+
+span{
+    color: var(--primary); 
+}
+
+h1{
+    margin-bottom:1rem;
+    font-size:2rem;
+    font-weight: 600;
+}
+
+/* clases generales */
+
+.markRosa{
+    background-color: var(--subrayado);
+    color: var(--dark)
+}
+
+.markOscuro{
+    background-color: var(--dark);
+    color: var(--subrayado);
+}
+
+.container{
+    max-width: 1152px;
+    padding:0 15px;
+    margin:0 auto;
+}
+
+.btn{
+    padding:0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.rosa{
+    background-color: var(--clarito);
+}
+/* Header */
+header{
+    background: var(--dark);
+}
+
+header nav .left a:hover{
+    color:var(--primary);
+    
+}
+
+header nav .left a{
+    color:var(--pure);
+    text-decoration: none;
+    margin-right:2rem;
+    text-transform: uppercase;
+    transition:all .3s ease;
+}
+
+header nav{
+    padding:2rem 0;
+}
+
+header nav .branding{
+    margin-right:3rem;
+}
+
+/* Nav */ 
+
+nav{
+    overflow: hidden;
+}
+
+/* About Section*/
+
+section.about .about-me-img{
+    height:450px;
+}
+
+section.about h1{
+    margin-bottom:1rem;
+    font-size:2rem;
+    font-weight: 600;
+}
+
+section.about h1 span{
+    color: var(--primary);
+}
+
+section.about h3{
+    margin-bottom:1rem;
+    font-size:1.6rem;
+    font-weight: 400;
+}
+
+section.about p{
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+
+section.about .right p{
+    font-family: 'Lato' , sans-serif;
+    color: var(--ternary);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+/* Footer */
+footer{
+    background:var(--dark);
+    text-align: center;
+    padding: 5rem 0;
+}
+
+footer .footer-socials a{
+    margin-right: 2.5rem;
+}
+
+footer .copyright{
+    color: var(--ternary);
+}
+
